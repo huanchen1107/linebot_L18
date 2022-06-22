@@ -42,7 +42,7 @@ def handle_message(event):
        line_bot_api.reply_message(event.reply_token,TextSendMessage("才不告訴你勒~~"))
    else:
         line_bot_api.reply_message(event.reply_token,TextSendMessage("You said: "+ message))
-   
+ 
    
 
 import os
