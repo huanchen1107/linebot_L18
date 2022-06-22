@@ -1,3 +1,4 @@
+import re
 from flask import Flask, request, abort
 
 from linebot import (
@@ -34,8 +35,15 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text=event.message.text)
-    line_bot_api.reply_message(event.reply_token, message)
+
+   message = event.message.text
+
+   if re.match("你是誰",message):
+       line_bot_api.reply_message(event.reply_token,TextSendMessage("才不告訴你勒~~"))
+   else:
+        line_bot_api.reply_message(event.reply_token,TextSendMessage("You said: "+ message))
+   
+   
 
 import os
 if __name__ == "__main__":
