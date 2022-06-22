@@ -2,13 +2,8 @@
 
 本教程介紹如何使用 Python LINE Bot SDK 在 Heroku 上架設一個簡單的回話機器人。
 <!--more-->
-如果您想以另一種語言架設範例 bot，請參閱以下  LINE Bot SDK repositories。
-- [PHP](https://github.com/line/line-bot-sdk-php)
-- [Go](https://github.com/line/line-bot-sdk-go)
-- [Perl](https://github.com/line/line-bot-sdk-perl)
-- [Ruby](https://github.com/line/line-bot-sdk-ruby)
 - [Python](https://github.com/line/line-bot-sdk-python)
-- [Node.js](https://github.com/line/line-bot-sdk-nodejs)
+
 
 ## 在你開始之前
 
@@ -16,6 +11,8 @@
 
 - 擁有 Line 帳號
 - 擁有 [Heroku](https://www.heroku.com) 帳戶（您可以免費創建一個）
+- 建立 provider
+- Create 一個 messaging api
 
 ## 建立 Heroku 專案
 1. 登入 Heroku 後，
